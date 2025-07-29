@@ -9,7 +9,7 @@ To deploy a python environment in an air-gapped environment.
 ```bash
 uv init my_project --python=3.10
 cd my_project
-uv add ruff # for example
+uv add unsloth # for example
 # the packages will be installed under .venv folder by default
 ```
 Example:
@@ -53,6 +53,20 @@ If the packages works with GPU, like `unsloth`, it saves you the trouble if you 
 
 ## Short Cut
 If it happens that the following is what you need:
+
+### Cuda Toolkit 12.4
+```
+Platform: Linux
+CUDA Toolkit: 12.4
+Python 3.10
+Torch: 2.6.0+cu124
+Unsloth 2025.7.11
+Transformers 4.54.0
+```
+The venv and its packages have been uploaded to gdrive: 
+https://drive.google.com/file/d/11JAzQIOQ0NtzM2UFs0tkBtSf-oSdL3gz
+
+### Cuda Toolkit 12.6
 ```
 Platform: Linux
 CUDA Toolkit: 12.6
@@ -61,4 +75,5 @@ Torch: 2.7.1+cu126
 Unsloth 2025.7.11
 Transformers 4.54.0
 ```
-The venv and its packages have been uploaded to gdrive: https://drive.google.com/file/d/11AUSUHe1hV5zF5V7VsxI8geDGomEeJmH/view?usp=drive_link
+The venv and its packages have been uploaded to gdrive: 
+https://drive.google.com/file/d/11AUSUHe1hV5zF5V7VsxI8geDGomEeJmH
