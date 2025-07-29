@@ -12,6 +12,11 @@ cd my_project
 uv add ruff # for example
 # the packages will be installed under .venv folder by default
 ```
+Example:
+<a target="_blank" href="https://colab.research.google.com/github/cpwan/unsloth_airgap/blob/main/Unsloth_create_env.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 2. Copy the `.venv` to the air-gapped environment.
 ```bash
 # machine with internet
@@ -21,11 +26,17 @@ tar -czvf env.tar.gz ./.venv
 tar -xzvf env.tar.gz
 ```
 3. Run the venv with one of the following
+
 ```bash
 uv run your_script.py # or
 source .venv/bin/activate && python your_script.py # or
 .venv/bin/python your_script.py # or
 ```
+
+Example:
+<a target="_blank" href="https://colab.research.google.com/github/cpwan/unsloth_airgap/blob/main/Unsloth_use_env.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 ## Handling GPU dependencies
 If the packages works with GPU, like `unsloth`, it saves you the trouble if you can install the packages elsewhere in a similar environment (in particular, CUDA toolkit version).
